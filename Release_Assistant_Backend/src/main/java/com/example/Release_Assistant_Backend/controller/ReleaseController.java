@@ -15,7 +15,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {"http://localhost:5173", "https://release-assistant-frontend.onrender.com"})
 @RequiredArgsConstructor
 public class ReleaseController {
     private final ReleaseService service;
